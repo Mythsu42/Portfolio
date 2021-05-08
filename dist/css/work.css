@@ -1,0 +1,49 @@
+:root {
+  --grey: #1e1e1e;
+  --dark_grey: #151515;
+  --red: #dc242f;
+  --purple: #7b4397;
+  --white: #dddddd; }
+
+body {
+  font-size: 62.5%;
+  margin: 0px;
+  padding: 0px;
+  background: var(--grey);
+  color: var(--white); }
+
+.container {
+  display: grid;
+  grid: "t s" auto "d s" auto / auto auto; }
+  .container .title {
+    grid-area: t;
+    background: linear-gradient(to right, var(--purple), var(--red));
+    height: 20rem;
+    border-radius: 4rem;
+    margin: 3rem; }
+    .container .title .name {
+      background: var(--grey);
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      width: 15rem;
+      margin-left: 12rem; }
+      .container .title .name h2 {
+        margin: 0rem;
+        padding: 0 0.5rem 0.5rem 0.5rem;
+        background: linear-gradient(to right, var(--purple), #973a79);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2.5rem;
+        text-align: center; }
+  .container .description {
+    grid-area: d; }
+  .container .skills {
+    grid-area: s;
+    background: var(--dark_grey);
+    width: 50rem;
+    border-radius: 4rem;
+    margin: 3rem; }
+    .container .skills img {
+      max-width: 18rem;
+      margin: 2rem 16rem;
+      border-radius: 25rem; }
